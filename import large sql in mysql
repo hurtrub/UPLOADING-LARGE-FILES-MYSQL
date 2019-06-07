@@ -1,0 +1,14 @@
+
+Open up the config.inc.php file within the phpmyadmin dir with your favorite code editor. In your local XAMPP environment,
+
+Do a search for the phrase $cfg[‘UploadDir’] – it’s going to look like this:
+$cfg['UploadDir'] = '';
+
+Change it to look like this:
+$cfg['UploadDir'] = 'upload';
+
+Then, within that phpmyadmin dir, create a new folder & name it upload.
+
+Take that large .sql file that you’re trying to import, and put it in that new upload folder.
+
+Now, the next time you go to import a database into phpMyAdmin, you’ll see a new dropdown field right below the standard browse area in your “File to Import” section.
